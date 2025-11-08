@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skylink Digital Works</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-poppins">
+<header class="bg-sky-700 text-white py-4 shadow-md">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+    <div class="flex items-center gap-3">
+      <img src="image.png" alt="Skylink Books Logo" class="h-12 w-12 rounded-full">
+      <h1 class="text-2xl font-bold tracking-wide">Skylink Digital Works — Books</h1>
+    </div>
+    <span class="italic text-sm text-sky-100 hidden sm:block">
+      “Fuel your mind, one book at a time.”
+    </span>
+  </div>
+</header>
+<nav class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+    <ul class="flex gap-6 text-gray-700 font-medium">
+      <li><a href="#home" class="hover:text-sky-600">Home</a></li>
+      <li><a href="#about" class="hover:text-sky-600">About</a></li>
+      <li><a href="#shop" class="hover:text-sky-600">Shop</a></li>
+      <li><a href="#reviews" class="hover:text-sky-600">Reviews</a></li>
+      <li><a href="#contact" class="hover:text-sky-600">Contact</a></li>
+    </ul>
+      <button onclick="openLoginModal()" class="bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-700 transition">
+      Login / Signup
+    </button>
+  </div>
+</nav>
+<section id="about" class="bg-gray-50 py-16">
+  <div class="max-w-5xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold text-sky-700 mb-4">About Skylink Digital Books</h2>
+    <p class="text-gray-700 leading-relaxed max-w-3xl mx-auto">
+      Skylink Digital Works is Kenya’s trusted online platform for eBooks and print books across genres — 
+      from personal growth to Christian literature, school books, and modern African authors. 
+      We empower readers by providing affordable, instantly downloadable books in a secure environment.
+    </p>
+    <div class="mt-8 flex justify-center">
+      <a href="#shop" class="bg-sky-600 text-white px-6 py-3 rounded-full hover:bg-sky-700 transition">
+        Shop Now
+      </a>
+    </div><br>
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-xl shadow-lg border-t-4 border-indigo-500">
+          <h3 class="text-2xl font-semibold mb-3 text-indigo-600 dark:text-indigo-300">Our Mission</h3>
+          <p class="text-gray-700 dark:text-gray-200">
+            To make books easily accessible and affordable to everyone, while promoting a culture of reading,
+            growth, and continuous learning across generations.
+          </p>
+        </div><br>
+
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-xl shadow-lg border-t-4 border-indigo-500">
+          <h3 class="text-2xl font-semibold mb-3 text-indigo-600 dark:text-indigo-300">Our Vision</h3>
+          <p class="text-gray-700 dark:text-gray-200">
+            To become the leading online bookstore that connects readers with powerful stories
+            and transformative knowledge.
+          </p>
+        </div>
+  </div>
+</section>
+<section class="bg-gray-100 py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-sky-700 mb-10">Book Categories</h2>
+    <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-sky-300 transition">
+        <h3 class="font-bold text-gray-800 mb-2">📖 Christian Books</h3>
+        <p class="text-gray-600 text-sm">Daily devotionals, prayer guides, and sermons.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-sky-300 transition">
+        <h3 class="font-bold text-gray-800 mb-2">🎓 Academic</h3>
+        <p class="text-gray-600 text-sm">Textbooks and revision guides for learners.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-sky-300 transition">
+        <h3 class="font-bold text-gray-800 mb-2">💡 Personal Growth</h3>
+        <p class="text-gray-600 text-sm">Self-improvement, motivation, and leadership books.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-sky-300 transition">
+        <h3 class="font-bold text-gray-800 mb-2">🌍 African Authors</h3>
+        <p class="text-gray-600 text-sm">Celebrating African storytelling and culture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-sky-700 mb-10">Our Book Collection</h2>
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
+      
+      <div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+        <img src="b1.jpg" alt="Toxic Family" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-2xl font-bold text-gray-800">Toxic Family</h3>
+        <p class="text-gray-600 mb-4">
+          Cassandra McBride’s guide empowers readers to identify toxic parents, set boundaries,
+          heal childhood trauma, and rebuild relationships.
+        </p>
+        <div class="flex justify-between items-center">
+          <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+          <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Toxic Family" data-price="500">
+              Order Now
+            </button>
+            <button onclick="openMpesaModal('Toxic Family',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+              M-Pesa
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+        <img src="b2.jpg" alt="The Power of Praying Couple" class="w-full h-48 object-cover rounded-lg mb-4">
+        <h3 class="text-2xl font-bold text-gray-800">The Power of Praying Couple</h3>
+        <p class="text-gray-600 mb-4">
+        Stormie Omartian’s prayer guide strengthens couples spiritually, offering heartfelt prayers that deepen intimacy, foster unity, and invite God’s presence into every aspect of their relationship.
+        </p>
+        <div class="flex justify-between items-center">
+          <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+          <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="The Power of Praying Couple" data-price="500">
+              Order Now
+            </button>
+            <button onclick="openMpesaModal('The Powerof Praying Couple',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+              M-Pesa
+            </button>
+          </div>
+        </div>
+      </div>
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Becoming_Michelle_Obama.jpg" alt="Becoming by Michelle Obama" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Becoming - Michelle Obama</h3>
+    <p class="text-gray-600 mb-4">
+    Michelle Obama’s intimate and inspiring memoir chronicling her journey from her childhood on the South Side of Chicago to her years as the first African American First Lady of the United States.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Becoming - Michelle Obama" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Becoming - Michelle Obama',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Believe_in_yourself.png" alt="Believe in Yourself" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Believe in Yourself - Dr. Joseph Murphy</h3>
+    <p class="text-gray-600 mb-4">
+    Dr. Murphy reveals how to harness the transformative power of your subconscious mind to overcome self-doubt, cultivate a positive mindset, and achieve your most ambitious dreams through faith and conviction.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Believe in Yourself" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Believe in Yourself',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Believe_it_to_achieve_it.jpg" alt="Believe It to Achieve It" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Believe It to Achieve It</h3>
+    <p class="text-gray-600 mb-4">
+    Brian Tracy and Christina Stein guide you to overcome self-doubt and past hurdles. This book offers practical strategies to unlock your full potential and turn belief into real-world success.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Believe It to Achieve It" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Believe It to Achieve It',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Boundaries.jpg" alt="Boundaries by Cloud & Townsend" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Boundaries: When To Say Yes, How To Say No</h3>
+    <p class="text-gray-600 mb-4">
+    Drs. Cloud and Townsend offer a biblical and practical guide to setting healthy personal limits. Learn how to establish boundaries in key areas of your life to take control and improve relationships.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Boundaries" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Boundaries',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Best_self.jpg" alt="Best Self by Mike Bayer" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Best Self: Be You, Only Better</h3>
+    <p class="text-gray-600 mb-4">
+    Life coach Mike Bayer provides a 10-step process for identifying your 'Best Self' and 'Anti-Self.' This book empowers you to achieve authentic happiness and make positive, lasting changes in your life.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Best Self" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Best Self',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Dear_self.jpg" alt="Dear self, by Patience Tamarra" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">dear self, - Patience Tamarra</h3>
+    <p class="text-gray-600 mb-4">
+    A gentle, self-published guide that inspires readers toward self-love, healing, and personal growth through affirmations, poetry, and reflective prompts for an honest conversation with your inner self.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Dear self," data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Dear self,',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Deep_work.jpg" alt="Deep Work by Cal Newport" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Deep Work: Rules for Focused Success</h3>
+    <p class="text-gray-600 mb-4">
+    Cal Newport makes a compelling case for the necessity of focused, distraction-free work in an increasingly noisy world, offering practical strategies to maximize productivity and create high-quality output.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Deep Work" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Deep Work',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Do_it_for_yourself.jpg" alt="Do It For Yourself Motivational Journal" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Do It For Yourself: A Motivational Journal</h3>
+    <p class="text-gray-600 mb-4">
+    By Kara Cutruzzula, this motivational journal encourages users to prioritize their goals and self-improvement through engaging prompts and exercises, helping to clarify intentions and track progress.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Do It For Yourself Journal" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Do It For Yourself Journal',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Discipline.jpg" alt="Discipline: Walking with God" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Discipline: Walking with God</h3>
+    <p class="text-gray-600 mb-4">
+    Rorisang Thandekiso shares personal insights and guidance on cultivating spiritual discipline. The book inspires readers to deepen their faith and strengthen their committed walk with God.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Discipline: Walking with God" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Discipline: Walking with God',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Do_it_today.jpg" alt="Do It Today by Darius Foroux" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Do It Today: Overcome Procrastination</h3>
+    <p class="text-gray-600 mb-4">
+    Darius Foroux delivers actionable strategies and clear principles to help you conquer procrastination, boost your productivity, and start focusing on meaningful work instead of putting it off.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Do It Today" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Do It Today',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Focus_on_what_matters.jpg" alt="Focus on What Matters by Darius Foroux" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Focus on What Matters</h3>
+    <p class="text-gray-600 mb-4">
+    A collection of short, insightful letters offering simple yet profound advice on living a well-balanced, mindful life by decluttering both your physical space and your mental energy.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Focus on What Matters" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Focus on What Matters',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Focus.jpg" alt="Focus by Daniel Goleman" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Focus: The Hidden Driver of Excellence</h3>
+    <p class="text-gray-600 mb-4">
+    Daniel Goleman explores the science of attention and how mastering three critical types of focus—inner, outer, and other—is the key to high performance, leadership, and success in life.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Focus - Daniel Goleman" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Focus - Daniel Goleman',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Forgiving_what_you_cant_forget.jpg" alt="Forgiving What You Can't Forget" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Forgiving What You Can't Forget</h3>
+    <p class="text-gray-600 mb-4">
+    Lysa TerKeurst guides readers through the challenging process of moving past painful memories. Discover how to process hurt, make peace with the past, and create a beautiful life moving forward.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Forgiving What You Can't Forget" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Forgiving What You Cant Forget',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Habits_of_a_Godly_woman.jpg" alt="Habits of a Godly Woman" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Habits of a Godly Woman</h3>
+    <p class="text-gray-600 mb-4">
+    Joyce Meyer teaches women how to develop spiritual habits that lead to a closer relationship with God, offering practical advice on prayer, faith, and living a life of inner peace and strength.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Habits of a Godly Woman" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Habits of a Godly Woman',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Grit.jpg" alt="Grit by Angela Duckworth" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Grit: The Power of Passion and Perseverance</h3>
+    <p class="text-gray-600 mb-4">
+    Psychologist Angela Duckworth argues that the secret to outstanding achievement is not talent, but a combination of **passion** and **perseverance**—a quality she terms "Grit."
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Grit" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Grit',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="How_did_we_get_here.jpg" alt="How Did We Get Here? by Mpoomy Ledwaba" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">How Did We Get Here?</h3>
+    <p class="text-gray-600 mb-4">
+    A girl's guide to finding herself. Mpoomy Ledwaba provides a heartfelt and practical roadmap for young women navigating identity, career, and relationships on their journey to self-discovery and purpose.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="How Did We Get Here?" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('How Did We Get Here?',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Healing_is_the_new_high.jpg" alt="Healing is the New High by Vex King" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Healing is the New High</h3>
+    <p class="text-gray-600 mb-4">
+    Vex King offers a guide to overcoming emotional turmoil and finding freedom. He shares powerful lessons on mindset, self-care, and accepting your emotions to achieve true inner peace and sustainable happiness.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="Healing is the New High" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Healing is the New High',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="How_to_talk_to_anyone.jpg" alt="How to Talk to Anyone by Leil Lowndes" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">How to Talk to Anyone</h3>
+    <p class="text-gray-600 mb-4">
+    Leil Lowndes offers 92 proven "little tricks" for big success in relationships. This guide provides practical, easy-to-use techniques to improve your communication skills, boost confidence, and connect with anyone.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                    data-product="How to Talk to Anyone" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('How to Talk to Anyone',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bg-white rounded-xl shadow-2xl overflow-hidden p-6 hover:shadow-sky-300 transition-all duration-300">
+    <img src="Hullo.jpg" alt="Hullo, Bu-Bye, Koko, Come In by Koleka Putuma" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-2xl font-bold text-gray-800">Hullo, Bu-Bye, Koko, Come In</h3>
+    <p class="text-gray-600 mb-4">
+    Koleka Putuma's evocative collection of poetry explores themes of race, gender, culture, and memory in post-apartheid South Africa. A powerful and critically acclaimed work that resonates deeply.
+    </p>
+    <div class="flex justify-between items-center">
+        <span class="text-3xl font-extrabold text-sky-600">Ksh 500</span>
+        <div class="space-x-3">
+            <button class="order-now-btn bg-sky-500 text-white px-3 py-2 rounded-full text-sm hover:bg-sky-600 transition shadow-md"
+                        data-product="Hullo, Bu-Bye, Koko, Come In" data-price="500">
+                Order Now
+            </button>
+            <button onclick="openMpesaModal('Hullo, Bu-Bye, Koko, Come In',500)" class="bg-green-500 text-white px-3 py-2 rounded-full text-sm hover:bg-green-600 transition shadow-md">
+                M-Pesa
+            </button>
+        </div>
+    </div>
+</div>
+
+    </div>
+  </div>
+
+<section id="referral" class="bg-white py-16">
+  <div class="max-w-4xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold text-sky-700 mb-4">Invite & Earn</h2>
+    <p class="text-gray-700 mb-6">
+      Invite your friends to Skylink Digital Books and earn <span class="text-sky-600 font-semibold">Ksh 100 credit</span> for every new customer who makes a purchase using your link.
+    </p>
+
+    <div class="flex justify-center flex-col items-center gap-4">
+      <input id="referralName" type="text" placeholder="Enter your name or email"
+        class="p-3 border border-gray-300 rounded-lg w-2/3 max-w-md text-center focus:outline-sky-600">
+      <button onclick="generateReferral()" class="bg-sky-600 text-white px-6 py-3 rounded-full hover:bg-sky-700 transition">
+        Generate My Referral Link
+      </button>
+      <div id="referralBox" class="hidden mt-4">
+        <p class="text-gray-700 mb-2">Your Referral Link:</p>
+        <div class="flex justify-center items-center gap-2">
+          <input id="referralLink" readonly
+            class="p-3 border border-sky-300 rounded-lg w-2/3 max-w-md text-center text-sky-700 font-semibold">
+          <button onclick="copyReferral()" class="bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-700 transition">
+            Copy
+          </button>
+        </div>
+        <p id="copyMsg" class="text-green-600 mt-3 hidden">✅ Link copied to clipboard!</p>
+      </div>
+    </div>
+
+    <div class="mt-10 bg-sky-50 p-6 rounded-xl shadow text-sky-800 max-w-lg mx-auto">
+      <h3 class="font-bold mb-2 text-lg">Your Referral Stats</h3>
+      <p id="referralStats" class="text-gray-700">You have <span id="refCount">0</span> successful referrals 🎉</p>
+    </div>
+  </div>
+</section>
+<section id="wallet" class="bg-gray-50 py-16">
+  <div class="max-w-4xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold text-sky-700 mb-4">Your Reward Wallet</h2>
+    <p class="text-gray-700 mb-6">Earn <span class="text-sky-600 font-semibold">Ksh 100</span> for each successful referral. Redeem once your balance reaches <span class="text-sky-600 font-semibold">Ksh 500</span>.</p>
+
+    <div class="bg-white shadow-xl rounded-2xl p-8 max-w-md mx-auto">
+      <div class="flex justify-between items-center text-lg mb-4">
+        <span class="font-semibold text-gray-700">Referral Count:</span>
+        <span id="walletRefCount" class="text-sky-700 font-bold">0</span>
+      </div>
+      <div class="flex justify-between items-center text-lg mb-4">
+        <span class="font-semibold text-gray-700">Reward Balance:</span>
+        <span id="walletBalance" class="text-green-600 font-bold">Ksh 0</span>
+      </div>
+
+      <button id="redeemBtn"
+        class="bg-sky-600 text-white px-6 py-3 rounded-full hover:bg-sky-700 transition disabled:bg-gray-300 disabled:cursor-not-allowed"
+        disabled onclick="openRedeemModal()">
+        Redeem via M-Pesa
+      </button>
+      <p id="redeemMsg" class="text-green-600 mt-4 hidden">✅ Redemption processed successfully!</p>
+    </div>
+  </div>
+</section>
+
+<div id="redeemModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+  <div class="bg-white p-8 rounded-2xl w-96 shadow-xl relative text-center">
+    <h3 class="text-2xl font-bold text-sky-700 mb-4">Redeem Rewards</h3>
+    <p class="mb-4 text-gray-700">Enter your M-Pesa number to receive your earnings.</p>
+    <input id="mpesaNumber" type="tel" placeholder="e.g. 0712345678"
+      class="w-full border border-gray-300 px-3 py-2 rounded-lg mb-3 text-center">
+    <button onclick="redeemRewards()" class="bg-sky-600 text-white w-full py-2 rounded-lg hover:bg-sky-700 transition">
+      Confirm Redeem
+    </button>
+    <button onclick="closeRedeemModal()" class="absolute top-2 right-3 text-gray-500 hover:text-red-500 text-lg">✕</button>
+  </div>
+</div>
+
+<section id="reviews" class="bg-white py-16">
+  <div class="max-w-5xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold text-sky-700 mb-6">What Readers Say</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-50 p-6 rounded-xl shadow">
+        <p class="text-gray-700 italic">“Amazing service! The digital books are instantly available after purchase.”</p>
+        <p class="mt-3 text-sky-600 font-semibold">– Joseph K.</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl shadow">
+        <p class="text-gray-700 italic">“Great selection of Christian and motivational books. Highly recommended!”</p>
+        <p class="mt-3 text-sky-600 font-semibold">– Mercy W.</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl shadow">
+        <p class="text-gray-700 italic">“Affordable and fast delivery. I love their referral discounts!”</p>
+        <p class="mt-3 text-sky-600 font-semibold">– Brian M.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="bg-sky-700 text-white py-16">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-4">Stay Connected</h2>
+      <p class="mb-6">Subscribe to receive updates on new books, offers, and free resources.</p>
+      <div class="flex justify-center">
+        <input id="emailInput" type="email" placeholder="Enter your email" class="p-3 rounded-l-lg w-2/3 text-gray-700">
+        <button onclick="subscribe()" class="bg-white text-sky-700 px-6 py-3 rounded-r-lg font-semibold hover:bg-gray-100 transition">
+          Subscribe
+        </button>
+      </div>
+      <p id="subMsg" class="mt-4 text-green-200 hidden">✅ You’ve been subscribed successfully!</p>
+      <p class="mt-6 text-sm">Or reach us directly via WhatsApp: 
+        <a href="https://wa.me/254795077967" class="underline text-yellow-300">+254 795 077 967</a> 
+      </p>
+    </div>
+  </section>
+
+
+  <div id="mpesaModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+    <div class="bg-white p-8 rounded-2xl w-96 shadow-xl relative">
+      <h3 class="text-2xl font-bold text-sky-700 mb-4">Pay via M-Pesa</h3>
+      <p id="mpesaProduct" class="text-gray-700 mb-3"></p>
+      <input type="text" id="mpesaPhone" placeholder="Enter your M-Pesa number" class="w-full border border-gray-300 px-3 py-2 rounded-lg mb-3">
+      <button onclick="confirmMpesa()" class="bg-green-500 text-white w-full py-2 rounded-lg hover:bg-green-600 transition">Confirm Payment</button>
+      <button onclick="closeMpesaModal()" class="absolute top-2 right-3 text-gray-500 hover:text-red-500 text-lg">✕</button>
+      <p id="mpesaStatus" class="text-green-600 mt-3 hidden">✅ Payment confirmed! Thank you.</p>
+    </div>
+  </div>
+
+  <script>
+    const sellerNumber = "254795077967";
+    document.querySelectorAll('.order-now-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const product = this.dataset.product;
+        const price = this.dataset.price;
+        const msg = `Hello! 👋 I’d like to order:\n📘 *${product}*\n💰 Price: Ksh ${price}\nPlease share payment & delivery details.`;
+        const url = `https://wa.me/${sellerNumber}?text=${encodeURIComponent(msg)}`;
+        window.open(url, '_blank');
+      });
+    });
+
+    function openLoginModal() {
+      document.getElementById('loginModal').classList.remove('hidden');
+    }
+    function closeLoginModal() {
+      document.getElementById('loginModal').classList.add('hidden');
+    }
+
+    function subscribe() {
+      const email = document.getElementById('emailInput').value;
+      if (!email || !email.includes('@')) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+      localStorage.setItem('subscriberEmail', email);
+      document.getElementById('subMsg').classList.remove('hidden');
+      setTimeout(() => document.getElementById('subMsg').classList.add('hidden'), 4000);
+      document.getElementById('emailInput').value = '';
+    }
+function generateReferral() {
+  const nameInput = document.getElementById('referralName').value.trim();
+  if (!nameInput) {
+    alert("Please enter your name or email first!");
+    return;
+  }
+
+  const encodedName = encodeURIComponent(nameInput.toLowerCase().replace(/\s+/g, "_"));
+  const baseURL = window.location.origin + window.location.pathname;
+  const referralLink = `${baseURL}?ref=${encodedName}`;
+
+  document.getElementById('referralBox').classList.remove('hidden');
+  document.getElementById('referralLink').value = referralLink;
+
+  localStorage.setItem('myReferralName', nameInput);
+  localStorage.setItem('myReferralLink', referralLink);
+}
+
+function copyReferral() {
+  const copyText = document.getElementById("referralLink");
+  copyText.select();
+  navigator.clipboard.writeText(copyText.value);
+  const msg = document.getElementById('copyMsg');
+  msg.classList.remove('hidden');
+  setTimeout(() => msg.classList.add('hidden'), 2000);
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+const referrer = urlParams.get('ref');
+if (referrer) {
+  let refCount = localStorage.getItem(`refCount_${referrer}`) || 0;
+  refCount++;
+  localStorage.setItem(`refCount_${referrer}`, refCount);
+  alert(`🎉 You were referred by ${referrer.replace(/_/g, " ")}!`);
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const name = localStorage.getItem('myReferralName');
+  if (name) {
+    const refCount = localStorage.getItem(`refCount_${encodeURIComponent(name.toLowerCase().replace(/\s+/g, "_"))}`) || 0;
+    document.getElementById('refCount').textContent = refCount;
+  }
+});
+const REWARD_PER_REF = 100;
+const REDEEM_LIMIT = 500;
+
+function updateWallet() {
+  const name = localStorage.getItem('myReferralName');
+  if (!name) return;
+
+  const refKey = encodeURIComponent(name.toLowerCase().replace(/\s+/g, "_"));
+  const refCount = parseInt(localStorage.getItem(`refCount_${refKey}`) || 0);
+  const balance = refCount * REWARD_PER_REF;
+
+  document.getElementById('walletRefCount').textContent = refCount;
+  document.getElementById('walletBalance').textContent = `Ksh ${balance}`;
+
+  const redeemBtn = document.getElementById('redeemBtn');
+  redeemBtn.disabled = balance < REDEEM_LIMIT;
+}
+
+function openRedeemModal() {
+  document.getElementById('redeemModal').classList.remove('hidden');
+}
+function closeRedeemModal() {
+  document.getElementById('redeemModal').classList.add('hidden');
+}
+
+function redeemRewards() {
+  const number = document.getElementById('mpesaNumber').value.trim();
+  if (!/^0\d{9}$/.test(number)) {
+    alert("Please enter a valid M-Pesa number starting with 0.");
+    return;
+  }
+
+  const name = localStorage.getItem('myReferralName');
+  if (!name) return;
+
+  const refKey = encodeURIComponent(name.toLowerCase().replace(/\s+/g, "_"));
+  const refCount = parseInt(localStorage.getItem(`refCount_${refKey}`) || 0);
+  const balance = refCount * REWARD_PER_REF;
+
+  if (balance < REDEEM_LIMIT) {
+    alert("Your balance must be at least Ksh 500 to redeem.");
+    return;
+  }
+
+  alert(`✅ Redemption Request Sent!\nKsh ${balance} will be sent to ${number}.`);
+  localStorage.setItem(`refCount_${refKey}`, 0); 
+  updateWallet();
+  closeRedeemModal();
+
+  const msg = document.getElementById('redeemMsg');
+  msg.classList.remove('hidden');
+  setTimeout(() => msg.classList.add('hidden'), 4000);
+}
+
+window.addEventListener('DOMContentLoaded', updateWallet);
+
+
+    function openMpesaModal(product, price) {
+      document.getElementById('mpesaModal').classList.remove('hidden');
+      document.getElementById('mpesaProduct').textContent = `You are paying Ksh ${price} for "${product}"`;
+    }
+    function closeMpesaModal() {
+      document.getElementById('mpesaModal').classList.add('hidden');
+      document.getElementById('mpesaStatus').classList.add('hidden');
+      document.getElementById('mpesaPhone').value = '';
+    }
+    function confirmMpesa() {
+      const phone = document.getElementById('mpesaPhone').value;
+      if (phone.length < 10) {
+        alert("Please enter a valid M-Pesa number");
+        return;
+      }
+      document.getElementById('mpesaStatus').classList.remove('hidden');
+      setTimeout(() => closeMpesaModal(), 2500);
+    }
+  </script>
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+  <p>&copy; 2025 Skylink Digital Works — All Rights Reserved.</p>
+  <p class="text-sm mt-2">Designed with ❤️ by Skylink Developers.</p>
+</footer>
+
+  <div class="floating-icons">
+    <a href="https://wa.link/oqgqsc" target="_blank" class="icon whatsapp" aria-label="WhatsApp Order"><i class="fab fa-whatsapp text-2xl"></i></a>
+    <a href="https://wa.link/oqgqsc" class="icon facebook" aria-label="Facebook Page"><i class="fab fa-facebook-f text-2xl"></i></a>
+    <a href="tel:+254795077967" class="icon support" aria-label="Customer Support"><i class="fas fa-headset text-2xl"></i></a>
+  </div>
+</body>
+</html>
